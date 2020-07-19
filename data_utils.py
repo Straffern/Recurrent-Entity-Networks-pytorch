@@ -28,7 +28,8 @@ def load_task(data_dir, task_id, only_supporting=False):
 #def tokenize(sent):
 #    return [x.strip() for x in re.split("(\W+)?", sent) if x.strip()]
 
-SPLIT_RE = re.compile(r'(\W+)?')
+#SPLIT_RE = re.compile(r'(\W+)?')
+SPLIT_RE = re.compile(r"(\w[\w']*\w|\w)")
 def tokenize(sentence):
     "Tokenize a string by splitting on non-word characters and stripping whitespace."
     return [token.strip().lower() for token in re.split(SPLIT_RE, sentence) if token.strip()]

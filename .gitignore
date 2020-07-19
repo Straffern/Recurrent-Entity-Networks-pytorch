@@ -1,2 +1,9 @@
-.DS_Store
+# Folders
+.vscode
 .venv
+.data
+__pycache__
+
+#Files
+.DS_Store
+logs/*

@@ -225,7 +225,7 @@ if __name__ == "__main__":
     parser.add_argument("--weight_decay", type=float, default=0)
     parser.add_argument("--epochs", type=int, default=1)
     parser.add_argument("--save_interval", type=int, default=10)
-    parser.add_argument("--output_path", type=str, default='/misc/vlgscratch2/LecunGroup/anant/ren/models',
+    parser.add_argument("--output_path", type=str, default='./logs',
                                 help='Location to save the logs')
     parser.add_argument("--exp_name", type=str, default='default_model',
                                 help='Experiment Name')
